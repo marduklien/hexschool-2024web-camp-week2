@@ -1,0 +1,728 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+
+html,
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  background-color: #fff;
+  line-height: 1.5;
+}
+
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+} 
+
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+.clear {
+  clear: both;
+}
+
+.bg-900 {
+  background: #000;
+}
+
+.bg-800 {
+  background: #1e1e1e;
+}
+
+.bg-700 {
+  background: #3b3b3b;
+}
+
+.bg-600 {
+  background: #5b5b5b;
+}
+
+.bg-500 {
+  background: #919191;
+}
+
+.bg-400 {
+  background: #c1c1c1;
+}
+
+.bg-300 {
+  background: #e9e9e9;
+}
+
+.bg-200 {
+  background: #f1f1f1;
+}
+
+.bg-100 {
+  background: #fafafa;
+}
+
+.bg-50 {
+  background: #fff;
+}
+
+.primary-900 {
+  color:#000;
+}
+
+.primary-800 {
+  color:#1e1e1e;
+}
+
+.primary-700 {
+  color:#3b3b3b;
+}
+
+.primary-600 {
+  color:#5b5b5b;
+}
+
+.primary-500 {
+  color:#919191;
+}
+
+.primary-400 {
+  color:#c1c1c1;
+}
+
+.primary-300 {
+  color: #e9e9e9;
+}
+
+.primary-200 {
+  color:#f1f1f1;
+}
+
+.primary-100 {
+  color:#fafafa;
+}
+
+.primary-50 {
+  color:#fff;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 38.4px;  
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 33.6px;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 28.8px;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 19.2px;
+}
+
+.heading {
+  letter-spacing: 0.12em;
+}
+
+.fs-2 {
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.fs-3 {
+  font-size: 28px;
+  line-height: 42px;
+}
+
+.fs-4 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.fs-5 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.fs-6 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.pb-1 {
+  padding-bottom: 4px;
+} 
+
+.pb-2 {
+  padding-bottom: 8px;
+}
+
+.pb-3 {
+  padding-bottom: 12px;
+}
+
+.pb-4 {
+  padding-bottom: 16px;
+}
+
+.pb-5 {
+  padding-bottom: 20px;
+}
+
+.pb-6 {
+  padding-bottom: 24px;
+}
+
+.mb-6 {
+  margin-bottom: 24px;
+}
+
+.banner__content .exp__title {
+  position: relative;
+  padding-bottom: 16px;
+}
+
+.banner__content .exp__title h6::after {
+  content: "";
+  width: 1.5em;
+  border-top: 2px solid #c1c1c1;
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.container-fluid {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+  padding: 0 12px;
+    @media screen and (max-width: 768px){
+      max-width: 100%;
+    }
+}
+
+/* navbar */
+.content {
+  padding: 28px 0px;
+  @media (max-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0px;
+      border-bottom: #f1f1f1 1px solid;
+    }
+}
+
+nav {
+  position: relative;
+}
+
+.navbar-list {
+  color: #000000;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  @media (max-width: 768px) {
+      display: none; 
+      top: 249px; 
+      align-items: center;
+      flex-direction: column;
+      padding: 40px 0;
+    }
+}
+
+.navbar-btn {
+  display: none;
+  @media (max-width: 768px) {
+      display: block; 
+      border: 0;
+      background-color: transparent;
+      cursor: pointer;
+        span {
+          font-size: 40px;
+        }
+    }
+}
+
+.navbar-list li {
+  position: relative;
+}
+
+/* 左上 */
+.navbar-list li:hover::before {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 8px;
+  left: 0px;
+  top: 0px;
+  border-left: 1px solid #919191;
+  border-top: 1px solid #919191;
+}
+
+/* 右上 */
+.navbar-list li:hover::after {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 8px;
+  right: 0px;
+  top: 0px;
+  border-right: 1px solid #919191;
+  border-top: 1px solid #919191;
+}
+
+/* 下 */
+.navbar-list a  {
+  position: relative;
+  text-decoration: none;
+  color: #000000;
+  padding: 4px 8px;
+    &:hover::before{
+        position: absolute;
+        content: '';
+        width: 8px;
+        height: 8px;
+        left: 0;
+        bottom: 0;
+        border-left: 1px solid #919191;
+        border-bottom: 1px solid #919191;
+    }
+    &:hover::after{
+        position: absolute;
+        content: '';
+        width: 8px;
+        height: 8px;
+        right: 0;
+        bottom: 0;
+        border-right: 1px solid #919191;
+        border-bottom: 1px solid #919191;
+    }
+}
+
+.navbar-list a:hover {
+  font-weight: 700;
+}
+
+
+/* active */
+.navbar-list li.active  {
+  font-weight: 700;
+  position: relative;
+}
+
+/* 左上 */
+.navbar-list li.active::before { 
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 8px;
+  left: 0px;
+  top: 0px;
+  border-left: 1px solid #919191;
+  border-top: 1px solid #919191;
+}
+
+.navbar-list li.active::before:hover { 
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 8px;
+  left: 0px;
+  top: 0px;
+  border-left: 1px solid #919191;
+  border-top: 1px solid #919191;
+}
+
+/* 右上 */
+.navbar-list li.active::after {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 8px;
+  right: 0px;
+  top: 0px;
+  border-right: 1px solid #919191;
+  border-top: 1px solid #919191;
+}
+
+.navbar-list li.active::after:hover {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 8px;
+  right: 0px;
+  top: 0px;
+  border-right: 1px solid #919191;
+  border-top: 1px solid #919191;
+}
+
+
+/* 下 */
+.navbar-list li.active a {
+  font-weight: 700;
+  position: relative;
+}
+
+/* 左下 */
+.navbar-list li.active a::before {
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    left: 0;
+    bottom: 0;
+    border-left: 1px solid #919191;
+    border-bottom: 1px solid #919191;
+}
+
+/* 右下 */
+.navbar-list li.active a::after {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 8px;
+  right: 0;
+  bottom: 0;
+  border-right: 1px solid #919191;
+  border-bottom: 1px solid #919191;
+}
+
+
+@media (max-width: 768px) {
+
+  .close {
+    display: none;
+  }
+
+  .active {
+    display: block;
+  }
+
+  .menu-active {
+    display: flex; 
+    width: 100%;
+    background: #FFF;
+    z-index: 2;
+  }
+}
+
+.banner {
+  width: 670px;
+  padding: 80px 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (max-width: 768px){
+    max-width: 90%;
+  }
+}
+
+.banner__slogan {
+  padding-bottom: 24px;
+  position: relative;
+}
+
+.banner__slogan::before{
+  content: "";
+  width: 50px;
+  height: 42px;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/quote-left.png?raw=true);
+  background-size: contain;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  position: absolute;
+  left: -5%;
+  top: -10%;
+  transform: translate(-50%, -50%);
+}
+
+.banner__slogan::after{
+  content: "";
+  width: 50px;
+  height: 42px;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/quote-right.png?raw=true);
+  background-size: contain;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  position: absolute;
+  right: -10%;
+  bottom: 0%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.banner__title {
+  padding-bottom: 24px;
+}
+
+.underline {
+  position: relative;
+  z-index: 1;
+}
+
+.underline-1 {
+  padding: 0;
+}
+
+.underline-2 {
+  padding-left: 0px;
+}
+
+.underline-1::after, .underline-2::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true");
+  background-size: contain;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  left: 0;
+  bottom: 2px;
+}
+
+
+.banner__content {
+  display: flex;
+  gap: 40px;
+}
+
+
+/* card */
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: calc(50% - 12px);
+  margin-top: 80px;
+  @media screen and (max-width: 576px){
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 48px;
+  }
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: #f1f1f1 1px solid;
+}
+
+.card-content {
+  padding: 16px 0;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 8px;
+}
+
+.desc {
+  color: #919191;
+  line-height: 24px;
+  text-align: left;
+  padding-bottom: 24px;
+  @media screen and (max-width: 576px){
+    padding-bottom: 16px;
+  }
+}
+
+.tag-wrapper {
+  display: flex;
+  gap: 16px;
+}
+
+.tag {
+  background: #f1f1f1;
+  padding: 4px 12px 4px 12px;
+  border-radius: 16px;
+}
+
+/* pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding-top: 72px;
+  padding-bottom: 120px;
+  gap: 16px;
+  @media screen and (max-width: 576px){
+    padding-top: 0px;
+    padding-bottom: 80px;
+  }
+}
+
+.pagination a {
+  color: #1e1e1e;
+  float: left;
+  font-weight: 400;
+  padding: 2px 13px;
+  text-decoration: none;
+}
+
+.pagination a:hover {
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 4px;
+}
+
+.pagination a.active {
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 4px;
+}
+
+/* footer */
+
+.footer {
+  padding: 80px 0;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true);
+  background-position: center center;
+  background-size: cover;
+   @media screen and (max-width: 576px){
+    padding: 40px 0;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true);
+  }
+}
+
+.footer .contact {
+  margin-bottom: 0;
+  @media screen and (max-width: 576px){
+    margin-bottom: 24px;
+  }
+}
+
+.footer .contact h5 a {
+ font-weight: 400;
+}
+
+.footer .contact h5 a:hover {
+  color: #1e1e1e;
+ }
+ 
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 576px){
+    flex-direction: column;
+  }
+}
+
+.footerList {
+  width: 360px;
+  @media screen and (max-width: 576px){
+    width: 88%;
+    margin: 0 auto;
+  }
+}
+
+.List__info {
+  display: flex;
+  font-weight: 400;
+  align-items: center;
+  border: 1px solid #c1c1c1;
+  padding: 8px 24px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all .3s;
+  gap: 8px;
+}
+
+.List__info img {
+  width: 38px;
+  margin: 9px;
+}
+
+.List__info img:first-child {
+  filter: brightness(0);
+}
+
+.List__info:hover span {
+  color: #FFF;
+}
+
+.List__info:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.List__info a:hover {
+  color: #fff;
+}
+
+.List__info:hover img {
+  fill: #FFF;
+  filter: brightness(10);
+}
+
